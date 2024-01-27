@@ -243,7 +243,7 @@ Optionally, you can have a finer grain control of the scope by passing a closure
 as the scope::
 
     $this->behaviors()->Tree->setConfig('scope', function ($query) {
-        $country = $this->getConfigureContry(); // A made-up function
+        $country = $this->getConfigureCountry(); // A made-up function
         return $query->where(['country_name' => $country]);
     });
 
